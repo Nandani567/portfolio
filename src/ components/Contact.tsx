@@ -1,5 +1,5 @@
 import { FaEnvelope, FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
-
+import ResumePDF from "../assets/nandanibansal_resume (1).pdf"
 const ContactTemplate = () => {
     return (
         <section
@@ -47,14 +47,34 @@ const ContactTemplate = () => {
                 </div>
 
                 {/* Resume Download */}
+                {/*<a*/}
+                {/*    href="../assets/Nandani_Bansal_Resume.pdf"*/}
+                {/*    download*/}
+                {/*    className="inline-flex items-center gap-3 px-8 py-4 bg-[#FF6B6B] text-black font-semibold rounded-md hover:bg-[#FF8787] transition"*/}
+                {/*>*/}
+                {/*    <FaDownload />*/}
+                {/*    Download Resume*/}
+                {/*</a>*/}
+
+                {/*<a*/}
+                {/*    href="../assets/nandanibansal_resume (1).pdf"*/}
+                {/*    download="Nandani_Bansal_Resume.pdf"*/}
+                {/*    target="_blank"*/}
+                {/*    rel="noopener noreferrer"*/}
+                {/*    className="inline-flex items-center gap-3 px-8 py-4 bg-[#FF6B6B] text-black font-semibold rounded-md hover:bg-[#FF8787] transition"*/}
+                {/*>*/}
+                {/*    <FaDownload />*/}
+                {/*    Download Resume*/}
+                {/*</a>*/}
                 <a
-                    href="/assets/Nandani_Bansal_Resume.pdf"
-                    download
+                    href={ResumePDF}
+                    download="Nandani_Bansal_Resume.pdf"
                     className="inline-flex items-center gap-3 px-8 py-4 bg-[#FF6B6B] text-black font-semibold rounded-md hover:bg-[#FF8787] transition"
                 >
                     <FaDownload />
                     Download Resume
                 </a>
+
             </div>
         </section>
     );
