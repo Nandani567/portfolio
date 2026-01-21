@@ -1,5 +1,5 @@
 import { FaEnvelope, FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
-import ResumePDF from "../assets/nandanibansal_resume (1).pdf"
+import ResumePDF from "../assets/Nandani_Bansal_Resume.pdf"
 const ContactTemplate = () => {
     return (
         <section
@@ -57,7 +57,7 @@ const ContactTemplate = () => {
                 {/*</a>*/}
 
                 {/*<a*/}
-                {/*    href="../assets/nandanibansal_resume (1).pdf"*/}
+                {/*    href="../assets/Nandani_Bansal_Resume.pdf"*/}
                 {/*    download="Nandani_Bansal_Resume.pdf"*/}
                 {/*    target="_blank"*/}
                 {/*    rel="noopener noreferrer"*/}
