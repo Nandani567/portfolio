@@ -1,74 +1,44 @@
-//
-// import { Routes, Route } from "react-router-dom";
-//
-// import FooterTemplate from "./ components/Footer";
-// import HomeTemplate from "./pages/Home";
-// import ProjectsPage from "./pages/Projects";
-// import ContactPage from "./pages/ContactPage";
-// import Navbar from "./ components/Navbar";
-// import SkillsSection from "./pages/Skills.tsx";
-//
-// const App = () => {
-//     return (
-//         <div className="flex flex-col min-h-screen bg-[#0D1B2A]">
-//             <Navbar />
-//
-//             <main className="flex-grow">
-//                 <Routes>
-//                     <Route path="/" element={<HomeTemplate />} />
-//                     {/*<Route path="/" element={<SkillsSection />} />*/}
-//                     <Route path="/projects" element={<ProjectsPage />} />
-//                     <Route path="/contact" element={<ContactPage />} />
-//                 </Routes>
-//                 <SkillsSection />
-//             </main>
-//
-//             <FooterTemplate />
-//         </div>
-//     );
-// };
-//
-// export default App;
-
-
-import FooterTemplate from "./ components/Footer";
-import HomeTemplate from "./pages/Home";
-import ProjectsPage from "./pages/Projects";
-import ContactPage from "./pages/ContactPage";
-import Navbar from "./ components/Navbar";
-import SkillsSection from "./pages/Skills.tsx";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
-    return (
-        <div className="flex flex-col min-h-screen bg-[#0D1B2A]">
-            {/* Navbar stays at the top */}
-            <Navbar />
+  return (
+    <div
+      className="
+        min-h-screen text-white
+        bg-gradient-to-br 
+        from-[#020617] via-[#0f172a] to-black
+      "
+    >
+      <Navbar />
 
-            <main className="flex-grow">
-                {/* 1. Hero / Home Section */}
-                <section id="home">
-                    <HomeTemplate />
-                </section>
+      <main className="space-y-32 pt-24 px-6 md:px-16">
 
-                {/* 2. Projects Section */}
-                <section id="projects">
-                    <ProjectsPage />
-                </section>
+        <section id="home">
+          <Hero />
+        </section>
 
-                {/* 3. Skills Section */}
-                <section id="skills">
-                    <SkillsSection />
-                </section>
+        <section id="projects">
+          <Projects />
+        </section>
 
-                {/* 4. Contact Section */}
-                <section id="contact">
-                    <ContactPage />
-                </section>
-            </main>
+        <section id="skills">
+          <Skills />
+        </section>
 
-            <FooterTemplate />
-        </div>
-    );
+        <section id="contact">
+          <Contact />
+        </section>
+
+      </main>
+
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
