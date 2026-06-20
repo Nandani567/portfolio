@@ -11,11 +11,11 @@ const Hero = () => {
         </h1>
 
         <h2 className="text-3xl mt-3 text-gray-300">
-          Fullstack Developer
+          Frontend Developer & Data Analyst
         </h2>
 
         <p className="mt-6 text-gray-400 max-w-lg">
-          I build scalable applications with clean architecture and real-world usability.
+          I build scalable applications and transform data into meaningful insights through analytics, visualization, and clean engineering.
         </p>
 
         <div className="mt-8 flex gap-4">
@@ -47,9 +47,9 @@ const Hero = () => {
 
         {/* subtle text */}
         <div className="relative text-center text-gray-400 text-sm space-y-2">
-          <p>Fullstack</p>
-          <p>UI/UX Focused</p>
-          <p>Performance Driven</p>
+          <p>Frontend Developer</p>
+           <p>Data Driven Mindset</p>
+          <p>Clean & Scalable Systems</p>
         </div>
       </motion.div>
 

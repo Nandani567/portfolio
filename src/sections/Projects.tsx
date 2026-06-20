@@ -1,50 +1,60 @@
 import ProjectCard from "../components/ProjectCard";
 
 const projects = [
- 
+  {
+    title: "SpecterScan – Phishing Detection System",
+    description:
+      "Real-time phishing detection browser extension that analyzes websites using threat intelligence APIs and ML-based risk scoring. Built with a FastAPI backend and Chrome Extension (Manifest V3) for instant security alerts.",
+    tech: [
+      "HTML,CSS",
+      "JavaScript",
+      "Chrome Extension (MV3)",
+      "FastAPI",
+      "Machine Learning (XGBoost, Random Forest)",
+      "VirusTotal API",
+      "Google Safe Browsing API",
+      "WHOIS Lookup",
+    ],
+    github: "https://github.com/Nandani567/SpectarScan",
+    type: "Full Stack",
+  },
 
   {
-  title: "Spectar Scan",
-  description:
-    "Real-time phishing and malicious website detection using ML models and threat intelligence APIs, delivered via a Chrome extension.",
-  tech: [
-    "Chrome Extension (MV3)",
-    "FastAPI",
-    "XGBoost",
-    "Random Forest",
-    "VirusTotal",
-    "Google Safe Browsing",
-    "WHOIS",
-  ],
-  github: "https://github.com/Nandani567/SpectarScan",
-}
-,
-  {
-    title: "Medical Reminder App",
+    title: "UPI Transaction Analytics Dashboard",
     description:
-      "Medication tracking system with reminders, scheduling, and refill alerts.",
-    tech: ["React Native", "MongoDB", "Node.js"],
-    github: "https://github.com/Nandani567/MediCode",
+      "Data analytics system to study UPI transaction patterns across platforms. Performed exploratory data analysis to identify growth trends, user behavior, and market share insights using interactive dashboards.",
+    tech: ["Python", "Pandas", "Streamlit", "Data Visualization", "EDA"],
+    github: "https://github.com/Nandani567/upi-dashboard",
+    live: "https://upi-dashboard-rdjd9vobadrv3smdzn2ofi.streamlit.app/",
+     type: "Data Analytics",
   },
+
   {
-    title: "SyncSyllabus",
+    title: "CryptAnalytics - Real-Time Crypto Pipeline",
     description:
-      "Analyzes academic syllabus against industry standards using ML.",
-    tech: ["Python", "Machine Learning", "Streamlit"],
-    github: "https://github.com/Nandani567/SyncSyllabus",
+      "Real-time data pipeline that streams cryptocurrency trade data from Binance, processes live JSON events, stores structured records in a database, and visualizes market activity through a live dashboard.",
+    tech: [
+      "FastAPI",
+      "WebSockets",
+      "Python",
+      "SQL",
+      "Binance API",
+      "Streamlit",
+    ],
+    github: "https://github.com/Nandani567/cryptAnalytics-pipeline",
+    type: "Data Engineering",
   },
- 
 ];
 
 const Projects = () => {
   return (
     <div>
-      <h2 className="text-4xl font-bold text-center mb-4">
+      <h2 className="text-3xl font-bold text-center text-white mb-4">
         Projects
       </h2>
 
-      <p className="text-center text-gray-400 dark:text-gray-400 text-gray-600 mb-12">
-        Real work. Not just tutorials.
+      <p className="text-center text-gray-400 mb-12">
+        Full Stack Systems, Data Analytics, and Real-Time Engineering
       </p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
