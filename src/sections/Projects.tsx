@@ -1,12 +1,22 @@
 import ProjectCard from "../components/ProjectCard";
 
-const projects = [
+type ProjectType = "Full Stack" | "Data Analytics" | "Data Engineering";
+
+const projects: {
+  title: string;
+  description: string;
+  tech: string[];
+  github: string;
+  live?: string;
+  type: ProjectType;
+}[] = [
   {
     title: "SpecterScan – Phishing Detection System",
     description:
       "Real-time phishing detection browser extension that analyzes websites using threat intelligence APIs and ML-based risk scoring. Built with a FastAPI backend and Chrome Extension (Manifest V3) for instant security alerts.",
     tech: [
-      "HTML,CSS",
+      "HTML",
+      "CSS",
       "JavaScript",
       "Chrome Extension (MV3)",
       "FastAPI",
@@ -26,21 +36,14 @@ const projects = [
     tech: ["Python", "Pandas", "Streamlit", "Data Visualization", "EDA"],
     github: "https://github.com/Nandani567/upi-dashboard",
     live: "https://upi-dashboard-rdjd9vobadrv3smdzn2ofi.streamlit.app/",
-     type: "Data Analytics",
+    type: "Data Analytics",
   },
 
   {
     title: "CryptAnalytics - Real-Time Crypto Pipeline",
     description:
       "Real-time data pipeline that streams cryptocurrency trade data from Binance, processes live JSON events, stores structured records in a database, and visualizes market activity through a live dashboard.",
-    tech: [
-      "FastAPI",
-      "WebSockets",
-      "Python",
-      "SQL",
-      "Binance API",
-      "Streamlit",
-    ],
+    tech: ["FastAPI", "WebSockets", "Python", "SQL", "Binance API", "Streamlit"],
     github: "https://github.com/Nandani567/cryptAnalytics-pipeline",
     type: "Data Engineering",
   },
