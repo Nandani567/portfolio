@@ -29,6 +29,27 @@ const projects: {
     type: "Full Stack",
   },
 
+
+{
+  title: "Superstore Sales Analysis",
+  description:
+    "End-to-end retail sales analysis using Python, SQL, and Power BI. Cleaned and analyzed Superstore data to answer 13 business questions across products, customers, geography, shipping, trends, and seasonality, then presented the findings through an interactive dashboard.",
+  tech: [
+    "Python",
+    "Pandas",
+    "Matplotlib",
+    "Seaborn",
+    "SQL",
+    "Power BI",
+    "Data Analysis",
+    "Data Visualization",
+  ],
+  github: "https://github.com/Nandani567/Superstore-Sales-Analysis",
+  type: "Data Analytics",
+},
+
+
+
   {
     title: "UPI Transaction Analytics Dashboard",
     description:
